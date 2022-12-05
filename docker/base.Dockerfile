@@ -1,6 +1,6 @@
 FROM debian:bullseye
 
-RUN apt-get update -q && apt-get install -q -y build-essential tar curl zip unzip git pkg-config cmake
+RUN apt-get update -q && apt-get install -q -y build-essential tar curl zip unzip git pkg-config cmake3.24
 
 RUN git clone https://github.com/microsoft/vcpkg /tmp/vcpkg
 RUN /tmp/vcpkg/bootstrap-vcpkg.sh
