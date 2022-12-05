@@ -13,8 +13,6 @@ jobs:
         uses: snok/install-poetry@v1
       - name: Install Task
         uses: arduino/setup-task@v1
-      - name: Python 3.8
-        run: task wheel PYTHON_VERSION=3.8.13
       - name: Python 3.9
         run: task wheel PYTHON_VERSION=3.9.13
       - name: Python 3.10
